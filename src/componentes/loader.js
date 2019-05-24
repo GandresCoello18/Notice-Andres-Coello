@@ -6,7 +6,7 @@ function loader(){
         <center>
             <div className="row">
                 <div className="col-12">
-                    <img src="images/loader.gif" className="img-fluid"/>
+                    <img src="https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif" className="img-fluid"/>
                 </div>
             </div>
         </center>
