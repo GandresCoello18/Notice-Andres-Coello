@@ -53,19 +53,19 @@ class CuadroRegistro extends React.Component{
                 <div className="row align-itens-center">
                     <div className="col-12">
                         <div className="logo">
-                            <img src="https://library.kissclipart.com/20180904/iq/kissclipart-mobile-phone-icon-svg-clipart-computer-icons-handh-09f698a6c2e16538.jpg" className="icon-mobile" width="38" height="38" />
+                            <img src="https://image.flaticon.com/icons/svg/1085/1085828.svg" className="icon-mobile" width="38" height="38" />
                         </div> 
                         <h5 className="text-center subtitulo mt-4">Notice - Andres Coello</h5>
                         <div className="row justify-content-around mt-4">
                             <div className="col-6">
                                 <div className="ovalo">
-                                <img src="https://www.pinclipart.com/picdir/middle/82-823151_notification-interface-symbol-svg-imagenes-de-la-campana.png" className="icon-notification" width="20" height="20" />
+                                <img src="https://image.flaticon.com/icons/svg/633/633816.svg" className="icon-notification" width="20" height="20" />
                                 <p className="text-center">13 Actividades</p>
                                 </div>
                             </div>
                             <div className="col-6">
                                 <div className="ovalo">
-                                <img src="https://banner2.kisspng.com/20180717/sey/kisspng-computer-icons-user-organization-user-svg-5b4d85a23661f6.1848889915318071382228.jpg" className="icon-notification" width="20" height="20" />
+                                <img src="https://image.flaticon.com/icons/svg/64/64096.svg" className="icon-notification" width="20" height="20" />
                                 <p className="text-center">{this.state.id} Miembros</p>
                                 </div>
                             </div>
