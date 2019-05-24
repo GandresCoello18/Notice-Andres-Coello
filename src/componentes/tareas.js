@@ -6,7 +6,7 @@ class Tareas extends React.Component{
 
     componentDidMount(){
         if(!localStorage.getItem("acceso")){
-            window.location.href="https://gandrescoello18.github.io/social-students/";
+            window.location.href="/";
         }
 }
 
@@ -23,7 +23,7 @@ class Tareas extends React.Component{
                                     <p className="p-1">{valor.descripcion}</p>
                                 </div>
                                 <div className="col-3">
-                                    <img src="images/file.svg" className="img-fluid"/>
+                                    <img src="https://image.flaticon.com/icons/svg/138/138878.svg" className="img-fluid"/>
                                 </div>
                             </div>
                         </article>
