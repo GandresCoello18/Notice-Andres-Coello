@@ -1,23 +1,65 @@
 import React from 'react';
+import Loader from './loader';
 import './css/general.css';
 
 class General extends React.Component{
+    state = {
+        gif: true,
+        error: null,
+        data: {
+            articles: [],
+        },
+    }
+
+    componentDidMount(){
+            if(!localStorage.getItem("acceso")){
+                window.location.href="/";
+            }
+        this.fetchCharacters();
+    }
+
+    fetchCharacters = async () => {
+        this.setState({
+            gif: true, error: null
+        })
+        try {
+            const respuesta = await fetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=c78a8c946dca497287fb3ec72e46fa3e');
+            const data = await respuesta.json();
+            this.setState({
+                gif: false,
+                data: data,
+            });
+        } catch (error) {
+            this.setState({
+                gif: false,
+                error: error,
+            });
+        }
+    }
+
     render(){
         return (
             <div className="row justify-content-center">
-                <div className="col-12 mt-2 col-md-8">
-                    <article className="p-3 articulo">
-                        <div className="row">
-                            <div className="col-9">
-                                <h5 className="p-1">Amazon se enfrenta a spofity luego de su nuevo servicio de musica</h5>
-                                <p className="p-1">The crypto markets have incurred overwhelmingly bullish price action over the past several weeks that appears to have confirmed many analyst’s belief that $3,200 truly is a long-term bottom for Bitcoin (BTC). The recent price action has drastically shifted ov…</p>
+                {this.state.data.articles.map(valor => (
+                    <div className="col-12 mt-2 col-md-8" key={valor.id}>
+                    <a href={valor.url} target="_blanck">
+                        <article className="p-3 articulo">
+                            <div className="row">
+                                <div className="col-9">
+                                    <h5 className="p-1">{valor.title}</h5>
+                                    <p className="p-1">{valor.description}</p>
+                                </div>
+                                <div className="col-3">
+                                    <img src={valor.urlToImage} className="img-fluid"/>
+                                </div>
                             </div>
-                            <div className="col-3">
-                                <img src="images/covers/mi-gente.jpg" className="img-fluid"/>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </a>
+                    </div>
+                ))}
+                {this.state.gif && (
+                < Loader />
+            )}
             </div>
         )
     }
