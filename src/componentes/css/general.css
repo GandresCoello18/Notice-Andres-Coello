@@ -3,3 +3,18 @@
   opacity: 0.9;
   border: 2px solid #E7EED9;
   border-radius: 10px; }
+
+.articulo {
+  background-color: #fff;
+  opacity: 0.9;
+  border: 2px solid #E7EED9;
+  border-radius: 10px; }
+  .articulo h5 {
+    color: #182546; }
+  .articulo p {
+    color: #111C37; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
