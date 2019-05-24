@@ -1,0 +1,16 @@
+{
+    "tareas": [
+        {
+            "id": 2,
+            "direccion": "https://drive.google.com/open?id=1pvGN6l9nIoDMrCeYM0Uf_SGgH3PWL1UV",
+            "titulo": "Ciclo de vida del software",
+            "descripcion": "Investiga caracteristicas, ventajas y desventajas sobre el bucle del software"
+        },
+        {
+            "id": 1,
+            "direccion": "https://drive.google.com/open?id=1qInE61ic0mMnd-WQdqYJiq_6eaYWSK02",
+            "titulo": "Organizadores Graficos sobre sistemas operativos - programacion - servidores",
+            "descripcion": "Desarrolla un grafico para mostrar la historia y evolucion de las tecnologias"
+        }
+    ]
+}

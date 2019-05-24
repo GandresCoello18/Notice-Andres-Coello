@@ -1,23 +1,35 @@
 import React from 'react';
+import Json from './json-Tareas.json';
 import './css/tareas.css';
 
 class Tareas extends React.Component{
+
+    componentDidMount(){
+        if(!localStorage.getItem("acceso")){
+            window.location.href="https://gandrescoello18.github.io/social-students/";
+        }
+}
+
     render(){
         return(
             <div className="row justify-content-center">
-                <div className="col-12 mt-2 col-md-8">
-                    <article className="p-3 articulo">
-                        <div className="row">
-                            <div className="col-9">
-                                <h5 className="p-1">Inverstigar las 5 metodologias de software mas utilizados en la industria</h5>
-                                <p className="p-1">The coin (BTC). The recent price action has drastically shifted ov…</p>
+                {Json.tareas.map(valor => (
+                    <div className="col-12 mt-2 col-md-8" key={valor.id}>
+                    <a href={valor.direccion} target="_blanck">
+                        <article className="p-3 articulo">
+                            <div className="row">
+                                <div className="col-9">
+                                    <h5 className="p-1">{valor.titulo}</h5>
+                                    <p className="p-1">{valor.descripcion}</p>
+                                </div>
+                                <div className="col-3">
+                                    <img src="images/file.svg" className="img-fluid"/>
+                                </div>
                             </div>
-                            <div className="col-3">
-                                <img src="images/file.svg" className="img-fluid"/>
-                            </div>
-                        </div>
-                    </article>
+                        </article>
+                    </a>
                 </div>
+                ))}
             </div>
         )
     }
