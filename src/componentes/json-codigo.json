@@ -1,0 +1,10 @@
+{
+    "codigos": [
+        {
+            "id": 1,
+            "direccion": "https://github.com/GandresCoello18/APK-Tech",
+            "titulo": "Aplicacion mobil creado con tecnologias frontend, Interprete Tech",
+            "descripcion": "crear una APK para celulares, hecho con tecnologias web HTML, CSS, JS. divide por secciones temas de tecnologias y realiza un examen para verificar que aprendio"
+        }
+    ]
+}
