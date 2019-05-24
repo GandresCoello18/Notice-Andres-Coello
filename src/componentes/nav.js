@@ -20,7 +20,7 @@ class Nav extends React.Component{
         return(
             <nav className="row navegacion">
                 <div className="col-6">
-                <h5 className="text-md-center mt-3">Social Students <img src="images/smartphone.svg" width="35" height="35" /></h5>
+                <h5 className="text-md-center mt-3">Notice - Andres - Coello <img src="images/smartphone.svg" width="35" height="35" /></h5>
                 </div>
                 <div className="col-6" onClick={this.menu}>
                 <p className="text-right mt-3"><img src="images/menu.svg" width="30" height="30" /></p>
