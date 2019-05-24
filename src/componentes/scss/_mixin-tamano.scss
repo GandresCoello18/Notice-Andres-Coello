@@ -1,0 +1,11 @@
+@mixin tamano($ancho, $alto, $fondo){
+    width: $ancho;
+    height: $alto;
+    background-color: $fondo;
+}
+
+@mixin responde($tamano_pagina){
+    @media only screen and (min-width: $tamano_pagina){
+        @content;
+    }
+}

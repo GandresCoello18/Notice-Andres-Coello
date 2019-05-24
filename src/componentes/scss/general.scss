@@ -1,0 +1,9 @@
+@import "variables.scss";
+@import "mixin-tamano.scss";
+
+.articulo{
+    background-color: #fff;
+    opacity: 0.9;
+    border: 2px solid $color-piel;
+    border-radius: 10px;
+}

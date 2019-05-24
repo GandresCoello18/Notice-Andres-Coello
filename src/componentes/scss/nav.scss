@@ -1,0 +1,26 @@
+@import "variables.scss";
+@import "mixin-tamano.scss";
+
+body{
+    background-image: url("../img/astronauta.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.navegacion{
+    background-color: $color-piel;
+    font-family: 'Nova Slim';
+}
+.cuadro-menu{
+    display: none;
+}
+
+.navegacion{
+    ul li:hover{
+        background-color: $azul-oscuro;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}

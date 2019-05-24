@@ -1,0 +1,18 @@
+body {
+  background-image: url("../img/astronauta.jpg");
+  background-repeat: ;
+  background-size: 100%; }
+
+.navegacion {
+  background-color: #E7EED9;
+  font-family: 'Nova Slim'; }
+
+.cuadro-menu {
+  display: none; }
+
+.navegacion ul li:hover {
+  background-color: #182546;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none; }
