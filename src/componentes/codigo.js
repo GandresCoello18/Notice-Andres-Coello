@@ -23,7 +23,7 @@ class Codigo extends React.Component{
                                 <p className="p-1">{valor.descripcion}</p>
                             </div>
                             <div className="col-3">
-                                <img src="images/coding.svg" className="img-fluid"/>
+                                <img src="https://image.flaticon.com/icons/svg/1197/1197511.svg" className="img-fluid"/>
                             </div>
                         </div>
                     </article>
