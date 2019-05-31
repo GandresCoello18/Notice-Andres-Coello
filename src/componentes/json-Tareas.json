@@ -1,6 +1,18 @@
 {
     "tareas": [
         {
+            "id": 4,
+            "direccion": "https://drive.google.com/open?id=1MhsPBZFJrs13dhrktbgHQMCZqHZUNZpg",
+            "titulo": "Realizar un diseño de entidad relacion",
+            "descripcion": "En un isntituto los profesores imparten modulos cada alumno......."
+        },
+        {
+            "id": 3,
+            "direccion": "https://drive.google.com/open?id=1_LXlKiL8mkPAPUdEBkhv0NDv3b5HQwXy",
+            "titulo": "Realizar un diseño entidad relacion",
+            "descripcion": "Una empresa de espáña entrega productos por todo el pais"
+        },
+        {
             "id": 2,
             "direccion": "https://drive.google.com/open?id=1pvGN6l9nIoDMrCeYM0Uf_SGgH3PWL1UV",
             "titulo": "Ciclo de vida del software",
