@@ -1,6 +1,12 @@
 {
     "tareas": [
     	{
+    		"id": 6,
+    		"direccion": "https://drive.google.com/open?id=1I5vqt90Tpoow2d1gBRke2oNRiJkV3kIf",
+    		"titulo": "Consultas entre tablas relacionadas 13-06-2019",
+    		"descripcion": "Crear 4 tablas y relacionarlas para realizar consultas con sus respectivos datos"
+    	},
+    	{
     		"id":5,
     		"direccion": "https://drive.google.com/open?id=18cc7AWcmiB9eI6Cu11smw0Dwejjsh7LW",
     		"titulo": "Investigacion de base de datos 05-06-2019",
